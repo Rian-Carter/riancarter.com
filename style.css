@@ -67,7 +67,7 @@ section .title::after {
     bottom: -8px;
     left: 50%;
     font-size: 20px;
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     padding: 0 5px;
     background: #fff;
     transform: translateX(-50%);
@@ -83,7 +83,7 @@ section .title::after {
 }
 .navbar.sticky {
     padding: 15px 0;
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
 }
 .navbar .max-width {
     display: flex;
@@ -96,7 +96,7 @@ section .title::after {
     font-weight: 600;
 }
 .navbar .logo a span {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     transition: all 0.3s ease-in;
 }
 .navbar.sticky .logo a span {
@@ -115,7 +115,7 @@ section .title::after {
     transition: color 0.3s ease-in;
 }
 .navbar .menu li a:hover {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
 }
 .navbar.sticky .menu li a:hover {
     color: #fff;
@@ -131,7 +131,7 @@ section .title::after {
     position: fixed;
     height: 45px;
     width: 42px;
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
     right: 30px;
     bottom: 10px;
     text-align: center;
@@ -144,7 +144,7 @@ section .title::after {
     cursor: pointer;
     opacity: 0;
     pointer-events: none;
-    transition: all 0.3s ease-in;
+    /* transition: all 0.3s ease-in; */
 }
 .scroll-up-btn.show {
     bottom: 30px;
@@ -152,6 +152,34 @@ section .title::after {
     pointer-events: auto;
 }
 .scroll-up-btn:hover {
+    filter: brightness(90%);
+}
+
+.scroll-down-btn {
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: rgb(203, 167, 116);
+    right: 30px;
+    bottom: 10px;
+    text-align: center;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    border-bottom-width: 2px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    /* transition: all 0.3s ease-in; */
+}
+.scroll-down-btn.show {
+    bottom: 30px;
+    opacity: 1;
+    pointer-events: auto;
+}
+.scroll-down-btn:hover {
     filter: brightness(90%);
 }
 /* home section styling */
@@ -185,23 +213,23 @@ section .title::after {
     margin: 5px 0;
 }
 .home .home-content .text-3 span {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     font-weight: 500;
 }
 .home .home-content a {
     display: inline-block;
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
     color: #fff;
     font-size: 25px;
     padding: 12px 36px;
     margin-top: 20px;
     font-weight: 400;
     border-radius: 6px;
-    border: 2px solid rgb(59, 157, 238);
+    border: 2px solid rgb(203, 167, 116);
     transition: all 0.3s ease-in;
 }
 .home .home-content a:hover {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     background: none;
 }
 /* about section styling */
@@ -226,25 +254,25 @@ section .title::after {
     margin-bottom: 10px;
 }
 .about .about-content .right .text span {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
 }
 .about .about-content .right p {
     text-align: justify;
 }
 .about .about-content .right a {
     display: inline-block;
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
     color: #fff;
     font-size: 20px;
     font-weight: 500;
     padding: 10px 30px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(59, 157, 238);
+    border: 2px solid rgb(203, 167, 116);
     transition: all 0.3s ease-in;
 }
 .about .about-content .right a:hover {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     background: none;
 }
 /* projects section styling */
@@ -272,10 +300,10 @@ section .title::after {
     /* min-height: 200px; */
     margin: 10px 0;
     height: 300px;
-    overflow-y: visible;
+    overflow-y: vis;
 }
 .projects .serv-content .card:hover {
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
 }
 .projects .serv-content .card .box {
     transition: all 0.3s ease-in;
@@ -285,7 +313,7 @@ section .title::after {
 }
 .projects .serv-content .card i {
     font-size: 50px;
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     transition: color 0.3s ease-in;
 }
 .projects .serv-content .card:hover i {
@@ -310,7 +338,7 @@ a:hover {
 }
 
 a:active {
-    color: rgb(59, 157, 238) 
+    color: rgb(203, 167, 116); 
 }
 /* skills section styling */
 .skills .title::after {
@@ -329,18 +357,18 @@ a:active {
 }
 .skills .skills-content .left a {
     display: inline-block;
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
     color: #fff;
     font-size: 18px;
     font-weight: 500;
     padding: 8px 16px;
     margin-top: 20px;
     border-radius: 6px;
-    border: 2px solid rgb(59, 157, 238);
+    border: 2px solid rgb(203, 167, 116);
     transition: all 0.3s ease-in;
 }
 .skills .skills-content .left a:hover {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     background: none;
 }
 .skills .skills-content .right .bars {
@@ -368,7 +396,7 @@ a:active {
     height: 100%;
     left: 0;
     top: 0;
-    background: rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
 }
 
 /* contact section styling */
@@ -399,7 +427,7 @@ a:active {
 }
 .contact .contact-content .row i {
     font-size: 25px;
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
 }
 .contact .contact-content .info .head {
     font-weight: 500;
@@ -458,12 +486,12 @@ a:active {
     border-radius: 6px;
     cursor: pointer;
     flex-wrap: nowrap;
-    background: rgb(59, 157, 238);
-    border: 2px solid rgb(59, 157, 238);
+    background: rgb(203, 167, 116);
+    border: 2px solid rgb(203, 167, 116);
     transition: all 0.3s ease-in;
 }
 .right form .button-area button:hover {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     background: none;
 }
 /* footer section styling */
@@ -476,7 +504,7 @@ footer {
     list-style: none;
 }
 footer span a {
-    color: rgb(59, 157, 238);
+    color: rgb(203, 167, 116);
     text-decoration: none;
 }
 /* footer span a:hover {
@@ -598,6 +626,14 @@ footer span a {
         width: 150px;
     }
     .scroll-up-btn {
+        right: 15px;
+        bottom: 15px;
+        height: 38px;
+        width: 35px;
+        font-size: 23px;
+        line-height: 38px;
+    }
+    .scroll-down-btn {
         right: 15px;
         bottom: 15px;
         height: 38px;

@@ -13,6 +13,12 @@ $(document).ready(function(){
         }else{
             $('.scroll-up-btn').removeClass("show");
         }
+      //scroll-down button show/hide script
+        if(this.scrollY < 500){
+            $('.scroll-down-btn').addClass("show");
+        }else{
+            $('.scroll-down-btn').removeClass("show");
+        }
     });
   // slide-up script
     $('.scroll-up-btn').click(function(){
@@ -20,6 +26,12 @@ $(document).ready(function(){
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
+  // slide-down script
+    $('.scroll-down-btn').click(function(){
+      $('html').animate({scrollTop: 0});
+      // removing smooth scroll on slide-up button click
+      $('html').css("scrollBehavior", "auto");
+  });
     $('.navbar .menu li a').click(function(){
       // applying again smooth scroll on menu items click
         $('html').css("scrollBehavior", "smooth");
