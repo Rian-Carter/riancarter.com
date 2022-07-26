@@ -20,15 +20,16 @@ $(document).ready(function(){
             $('.scroll-down-btn').removeClass("show");
         }
     });
-  // slide-up script
+      // slide-up script
     $('.scroll-up-btn').click(function(){
         $('html').animate({scrollTop: 0});
         // removing smooth scroll on slide-up button click
         $('html').css("scrollBehavior", "auto");
     });
-  // slide-down script
+      // slide-down script
     $('.scroll-down-btn').click(function(){
-      $('html').animate({scrollTop: 0});
+      $('html').animate({scrollTop: 968});
+      // $('#about').scroll();
       // removing smooth scroll on slide-up button click
       $('html').css("scrollBehavior", "auto");
   });
@@ -41,7 +42,7 @@ $(document).ready(function(){
         $('.navbar .menu').toggleClass("active");
         $('.menu-btn i').toggleClass("active");
     });
-  // typing text animation script
+    //   typing text animation script
     // var typed = new Typed(".typing", {
     //     strings: ["Developer", "Designer", "Student", "Freelancer"],
     //     typeSpeed: 100,
